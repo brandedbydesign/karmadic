@@ -5,7 +5,7 @@ Github Theme URI: https://github.com/brandedbydesign/karmadic
 Author: Brandy Fetzner
 Author URI: http://karmadic.com/
 Description: This site was built by Brandy Fetzner. If you have any questions, please contact <a href="mailto:updates@karmadic.com">updates@karmadic.com</a>
-Version: 1.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive-layout
@@ -196,12 +196,12 @@ object,
 /*--------------------------------------------------------------
 3.1 Typography
 --------------------------------------------------------------*/
-@font-face {
+/*@font-face {
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 400;
 	src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
-}
+}*/
 
 body {
 	font-family: 'Open Sans', sans-serif;
