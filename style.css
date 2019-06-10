@@ -1,0 +1,376 @@
+/*
+Theme Name: Karmadic
+Theme URI: http://karmadic.com/
+Github Theme URI: https://github.com/brandedbydesign/karmadic
+Author: Brandy Fetzner
+Author URI: http://karmadic.com/
+Description: This site was built by Brandy Fetzner. If you have any questions, please contact <a href="mailto:updates@karmadic.com">updates@karmadic.com</a>
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: responsive-layout
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Karmadic is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Bootstrap
+	1.1 Adjustments
+
+2.0	Underscores
+	2.1 Elements
+	2.2 Accessibility
+	2.3 Alignments
+	2.4 Clearings
+
+3.0 Karmadic
+	3.1 Typography
+	3.2 Background
+	3.3 Header
+	3.4 Navigation
+	3.5 Content
+	3.6 Sidebar
+	3.7 Footer
+	3.8 Custom
+
+4.0 Media Queries
+	4.1 xs
+	4.2 sm
+	4.3 md
+	4.4 lg
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Bootstrap
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.1 Adjustments
+--------------------------------------------------------------*/
+/* If they insist, disable responsiveness thusly
+ * @link http://getbootstrap.com/getting-started/#disable-responsive
+ *
+ * 1. Replace all col classes (col-lg, col-md, col-sm) with col-xs
+ * 2. Remove all navbar collapsing and expanding behavior
+ * 3. Uncomment css below to override container width
+ */
+
+/*
+.container {
+	width: 970px !important;
+}
+@media (min-width: 768px) {
+	.container {
+		width: 970px;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 970px;
+	}
+}
+*/
+
+/*--------------------------------------------------------------
+2.0	Underscores
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+2.1 Elements
+--------------------------------------------------------------*/
+img {
+	height: auto; /* Make sure images are scaled correctly */
+	max-width: 100%; /* Adhere to container width */
+}
+
+/* Make sure elements fit their containers */
+embed,
+iframe,
+object,
+.wp-caption,
+.widget select {
+	max-width: 100%;
+}
+
+/* Required by WordPress theme check */
+.sticky,
+.bypostauthor,
+.gallery-caption,
+.wp-caption-text {
+}
+
+/*--------------------------------------------------------------
+2.2 Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+2.3 Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+2.4 Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: '';
+	display: table;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+3.0 Your Web Layout
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+3.1 Typography
+--------------------------------------------------------------*/
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+
+}
+p {
+
+}
+
+/*--------------------------------------------------------------
+3.2 Background
+--------------------------------------------------------------*/
+body {
+	background: #fff;
+}
+.site-header {
+	background: #f8f8f8;
+}
+#site-navigation {
+	background: #f0f0f0;
+}
+.site-content > .container {
+	background: #e8e8e8;
+}
+.site-footer {
+	background: #e0e0e0;
+}
+
+/*--------------------------------------------------------------
+3.3 Header
+--------------------------------------------------------------*/
+#logo {
+
+}
+
+/*--------------------------------------------------------------
+3.4 Navigation
+--------------------------------------------------------------*/
+/* Primary nav */
+.navbar {
+	border: none;
+    border-radius: 0;
+}
+.navbar-default {
+	margin-bottom: 0;
+}
+.navbar-default .navbar-nav {
+	margin-left: -15px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #333;
+    padding: 15px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	background: #555;
+	color: #eee;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  	background: #777;
+  	color: #fff;
+}
+
+.site-header .caret {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+3.5 Content
+--------------------------------------------------------------*/
+.entry-header {
+
+}
+.entry-content {
+
+}
+.entry-footer {
+
+}
+
+/*--------------------------------------------------------------
+3.6 Sidebar
+--------------------------------------------------------------*/
+.widget-area {
+
+}
+.widget-title {
+
+}
+
+/*--------------------------------------------------------------
+3.7 Footer
+--------------------------------------------------------------*/
+.attribution {
+
+}
+
+/*--------------------------------------------------------------
+3.8 Custom
+--------------------------------------------------------------*/
+.search-submit {
+	font-family:FontAwesome;
+}
+
+
+
+/*--------------------------------------------------------------
+4.0 Media Queries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+4.1 xs
+--------------------------------------------------------------*/
+/* Extra Small - phones */
+
+
+
+
+/*--------------------------------------------------------------
+4.2 sm
+--------------------------------------------------------------*/
+@media (min-width: 768px) {
+	/* Small - tablets */
+
+
+
+}
+
+/*--------------------------------------------------------------
+4.3 md
+--------------------------------------------------------------*/
+@media (min-width: 992px) {
+	/* Medium - desktops */
+	
+	/* Sticky footer
+	 * @link http://mystrd.at/modern-clean-css-sticky-footer/
+	 */
+	html {
+    	position: relative;
+    	min-height: 100%;
+	}
+	body {
+    	margin: 0 0 200px; /* = .site-footer height */
+	}
+	.site-footer {
+    	position: absolute;
+    	left: 0;
+    	bottom: 0;
+    	width: 100%;
+    	height: 200px; /* = body margin-bottom */
+	}
+
+
+
+}
+
+/*--------------------------------------------------------------
+4.4 lg
+--------------------------------------------------------------*/
+@media (min-width: 1200px) {
+	/* Large - desktops */
+
+
+
+}
